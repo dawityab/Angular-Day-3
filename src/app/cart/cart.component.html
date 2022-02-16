@@ -17,13 +17,13 @@
            </div>
         </div>
         
-        <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
-            <div>
+        <form class="formCart" [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+            <div class="formgroups">
                 <label for="name">Name</label><br>
                 <input type="text" formControlName="name">
             </div>
             <div>
-                <label for="name">Address</label>
+                <label for="name">Address</label><br>
                 <input type="text" formControlName="address">
             </div>
           <button class="btn btn-success m-2 p-2" type="submit">Purchase</button>
