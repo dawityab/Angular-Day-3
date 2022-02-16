@@ -1,0 +1,7 @@
+.card-img-top{
+    float: left;
+    width: 100%;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+}

@@ -1,0 +1,16 @@
+<div class="container-fluid">
+    <div class="row" >
+        <h2 class="title">Get your best friends</h2>
+        <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let pet of pets; let i = index">
+            <div class="card m-1 mx-3 pb-2 cards-style ">
+           <img src="{{pet.image}}" class="card-img-top" alt="{{pet.name}}"> 
+            <h3 class="card-text text-light bg-dark text-center fs-5 p-2">{{pet.name}}</h3>
+            <h3 class="btn btn-danger w-50 text-center fs-5 p-1 m-2">{{pet.price}} €</h3>
+            <p class="card-text text-dark fs-6 m-2"><b>Gender: {{pet.gender}}</b></p>
+           
+            <p class="card-text text-dark fs-6 m-2"><b>Size: {{pet.size}}</b></p>
+            <h3 class="btn btn-primary  text-center fs-5 p-1 m-2" routerLink="/pets/{{pet.id}}">Details</h3>
+    </div>
+</div>
+    </div>
+</div>
