@@ -18,13 +18,16 @@ export class ProductDetailsComponent implements OnInit {
     private route: ActivatedRoute,
     private cartService: CartService
     ) { }
+  
+
     successInfo: string = "Your Pet has been added to the cart!";
-    addToCart(){
-      this.cartService.addToCart(this.pet);
-      (document.getElementById("success-Info")as HTMLElement).innerHTML = this.successInfo;
-      (document.getElementById("success-Info")as HTMLElement).classList.add("alert-success");
-     
-    }
+    addToCart()
+      {
+        this.cartService.addToCart(this.pet);
+        (document.getElementById("success-Info")as HTMLElement).innerHTML = this.successInfo;
+        (document.getElementById("success-Info")as HTMLElement).classList.add("alert-success");
+      
+      }
 
   ngOnInit(): void {
     this.route.params.subscribe((params: Params) => {

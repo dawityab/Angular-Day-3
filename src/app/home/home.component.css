@@ -2,7 +2,7 @@
    background-image: url("../../assets/hero.jpg");
    height: 700px;
    width: 100%;
-   background-size: cover;
+   background-size:100% 100%;
 }
 
 .land-image{
@@ -18,3 +18,31 @@
     margin-top: 100px;
     margin-left: 80px;
 }
+@media (max-width: 575.98px) { 
+
+    .container-fluid{
+        background-image: url("../../assets/hero.jpg");
+        height:300px;
+        width: 100%;
+        background-size:100% 100%;
+     }
+     .product-btn{
+        margin-top: 100px;
+        margin-left: 80px;
+    }
+
+ }
+ @media (max-width: 757.98px) { 
+
+    .container-fluid{
+        background-image: url("../../assets/hero.jpg");
+        height: 400px;
+        width: 100%;
+        background-size:100% 100%;
+     }
+     .product-btn{
+        margin-top: 100px;
+        margin-left: 80px;
+    }
+
+ }
